@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'components/header.html' %}
+<!-- breadcrumb section start -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="breadcrumb-content">
+                    <div>
+                        <h2><img src="{% static 'assets/images/breadcrumb-title.png' %}" class="img-fluid"
+                                alt="title-effect">{{ blogpost.title }}
+                        </h2>
+                        <!-- <p><i class="ri-subtract-line"></i>Discover the most recent blogs about artificial
+                            intelligence here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-lg-inline-block d-none">
+                <div class="breadcrumb-img">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/blog-details-vector.svg" class="img-fluid" alt="service">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- breadcrumb section end -->
+
+
+<!-- blog details start -->
+<section class="ratio_40">
+    <div class="container">
+        <div class="blog-details">
+            <div class="blog-img">
+                <img src="{{ blogpost.banner_image.url }}" class="img-fluid w-100 bg-img" alt="blog">
+            </div>
+            <div class="blog-title-box">
+                <a data-cursor="pointer" class="main-title" href="{% url 'blogpost-detail' blogpost.pk %}">{{ blogpost.title }}</a>
+                <ul>
+                    <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code.svg" class="img-fluid avtar" alt="author"> {{ blogpost.author }}
+                    </li>
+                    <li><i class="iconsax" data-icon="calendar-add"></i> blogpost.date_created|date:"d F Y"</li>
+                    <li><i class="iconsax" data-icon="clock"></i> {{ blogpost.time_to_read }} min</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-10 m-auto">
+                    <div class="blog-main-content">
+                        <p>{{ blogpost.content|safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blog details end -->
+
+{% include 'components/contact-us.html' %}
+{% include 'components/footer.html' %}
+
+{% endblock %}

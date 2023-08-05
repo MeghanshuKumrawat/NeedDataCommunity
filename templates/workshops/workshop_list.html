@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'components/header.html' %}
+
+
+<!-- breadcrumb section start -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="breadcrumb-content">
+                    <div>
+                        <h2><img src="{% static 'assets/images/breadcrumb-title.png' %}" class="img-fluid"
+                                alt="title-effect">Workshops
+                        </h2>
+                        <p><i class="ri-subtract-line"></i>We offer free workshops and projects that will
+                            help you achieve your goals faster, while setting you up for sustainable
+                            growth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-lg-inline-block d-none">
+                <div class="breadcrumb-img">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service-vector.svg" class="img-fluid"
+                        alt="service">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- breadcrumb section end -->
+
+
+<!-- service section start -->
+<section class="feature-section pb-0">
+    <div class="container pb-md-5 pb-0">
+        <div class="title-basic fs-sm">
+            <h2 class="text-white">A Wide Range of
+                Workshop to Support Any Use Case</h2>
+        </div>
+        <!-- <ul class="tab-section">
+            <li class="active"><a href="#">Quick service</a></li>
+            <li><a href="#">Social media</a></li>
+            <li><a href="#">Email generator</a></li>
+            <li><a href="#">Personal advisor</a></li>
+            <li><a href="#">Ecommerce</a></li>
+            <li><a href="#">Ads & marketing</a></li>
+            <li><a href="#">ASO expert</a></li>
+        </ul> -->
+        <div class="row g-xxl-5 g-4">
+            {% for workshop in workshops %}
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="feature-box">
+                    <div class="feature-top">
+                        <div class="feature-icon">
+                            <img width="35" height="35" src="{{ workshop.icon.url }}" alt="">
+                            <img src="{{ workshop.icon.url }}"
+                            class="img-fluid bold-icon" alt="">
+                        </div>
+                        <h3>{{ workshop.title }}</h3>
+                    </div>
+                    <h4>{{ workshop.description|truncatewords:10 }}</h4>
+                    <a href="{% url 'workshop-detail' workshop.pk %}">
+                        <div data-cursor="pointer" class="link-overflow"><a>Read more <i class="iconsax"
+                                    data-icon="arrow-right"></i></a>
+                        </div>  
+                    </a>
+                    </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- service section end -->
+
+{% include 'components/contact-us.html' %}
+{% include 'components/footer.html' %}
+
+{% endblock content %}

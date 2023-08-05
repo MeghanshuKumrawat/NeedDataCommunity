@@ -1,0 +1,1166 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'components/header.html' %}
+
+<!-- home section start -->
+<section class="home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="home-content">
+                    <div class="bg-effect">
+                        <img src="{% static 'assets/images/home/home-bg.gif' %}" class="img-fluid bg-gif" alt="">
+                        <img src="{% static 'assets/svg/home/1.png' %}" class="img-fluid effect1 rotate-effect" alt="">
+                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/home/2.svg"
+                            class="img-fluid effect2 rotate-effect" alt="">
+                    </div>
+                    <div>
+                        <h1>NEED <div class="title-effect">
+                                <img src="{% static 'assets/images/title-effect.png' %}" alt=""><span>DATA</span>
+                            </div> COMMUNITY</h1>
+                        <p>
+                            Dive into our diverse range of interactive resources and captivating data analysis projects,
+                            designed to empower learners from every background. Engage in real-world datasets, unravel
+                            complex insights, and master the art of data-driven decision-making.
+                        </p>
+                        <!-- <a data-cursor="pointer" class="start-link"><i class="iconsax"
+                                    data-icon="play-circle"></i>Start free trial</a> -->
+                    </div>
+                </div>
+                <div class="home-laptop px-md-0 px-3 mb-5">
+                    <!-- <div class="laptop-sec position-relative">
+                            <div class="hand-sec">
+                                <img src="../assets/images/home/hand.png" class="img-fluid left-hand" alt="hand">
+                                <img src="../assets/images/home/hand.png" class="img-fluid right-hand" alt="hand">
+                                <img src="../assets/images/home/finger.png" class="img-fluid left-finger" alt="hand">
+                                <img src="../assets/images/home/finger.png" class="img-fluid right-finger" alt="hand">
+                            </div>
+                            <img src="../assets/images/home/laptop.png" class="img-fluid laptop-img" alt="laptop">
+                        </div> -->
+                    <div class="home-info">
+                        <ul class="info-list">
+                            <li>Data Science </li>
+                            <li>Software Development</li>
+                            <li>Data Analyst</li>
+                        </ul>
+                        <ul class="star-rating">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                        <h4>Unleashing the Power of Data: Empowering All with Accessible Data Science Education</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home section end -->
+
+
+
+<!-- service section start -->
+<div class="service-section section-b-space">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="row g-4 service-row">
+                    <div class="col-sm-6">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service/copy.svg"
+                                    class="img-fluid outline-icon" alt="">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service/copy-bold.svg"
+                                    class="img-fluid bold-icon" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service-title.svg"
+                                        alt="effect" class="img-fluid">Learn Data</h3>
+                                <p>Empower yourself with data-driven insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service/graph.svg"
+                                    class="img-fluid outline-icon" alt="">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service/graph-bold.svg"
+                                    class="img-fluid bold-icon" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service-title.svg"
+                                        alt="effect" class="img-fluid">Collaborate Globally</h3>
+                                <p>Connect, share, and grow with a global community.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service/search.svg"
+                                    class="img-fluid outline-icon" alt="">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service/search-bold.svg"
+                                    class="img-fluid bold-icon" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service-title.svg"
+                                        alt="effect" class="img-fluid">SEO
+                                    Sepcialist</h3>
+                                <p>Generate more engaging content to skyrocket your website’s visibility
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service/text.svg"
+                                    class="img-fluid outline-icon" alt="">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service/text-bold.svg"
+                                    class="img-fluid bold-icon" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service-title.svg"
+                                        alt="effect" class="img-fluid">Content
+                                    marker</h3>
+                                <p>Reinvent your content marketing and captivate your audience like never before.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="service-info">
+                    <div>
+                        <div class="title">
+                            <h2>For All Kind of Developers</h2>
+                            <h3>Democratizing Data Science Education for All</h3>
+                        </div>
+                        <p>At Need Data Community, we believe that knowledge should know no bounds. We are
+                            revolutionizing the world of data science education, making it accessible to all
+                            individuals, regardless of financial barriers. Embark on an immersive journey through our
+                            platform, where engaging resources and real-world data analysis projects await. From
+                            predictive modeling to exploratory data analysis, our captivating projects cover a wide
+                            range of topics, empowering learners to excel in this rapidly evolving field. Join our
+                            interactive workshops, unlock the secrets of data visualization, and harness the power of
+                            data to transform insights into action. Together, let's pave the way for a data-driven
+                            future where possibilities are limitless.</p>
+                        <a data-cursor="pointer" class="btn-arrow" href="#">
+                            <div class="icon-arrow"><i class="iconsax" data-icon="arrow-up"></i></div>View all
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service section end -->
+
+
+<!-- about section start -->
+<section class="about-section section-b-space section-mb-space">
+    <div class="bg-effect" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"></div>
+    <div class="container">
+        <div class="row g-md-5 g-4">
+            <div class="col-lg-6 order-lg-0 order-1">
+                <div class="about-content">
+                    <div>
+                        <div class="title">
+                            <span class="number-pattern">01.</span>
+                            <h2 class="text-white">Empower with Data: Unleashing the Potential of Data Science Education
+                            </h2>
+                        </div>
+                        <p>Crafting influential content requires a deep understanding of your target audience.
+                            Pinpoint your ideal demographic and familiarise yourself with their needs, passions, and
+                            sources of concern.</p>
+                        <ul>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Ignite your data-driven journey with engaging projects and immersive
+                                workshops.</li>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Unlock insights and master real-world data analysis techniques.</li>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Bridge the educational gap with accessible resources and personalized
+                                support.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/character/1.svg" class="img-fluid"
+                        alt="about">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section end -->
+
+<!-- about section start -->
+<section class="about-section right-version section-b-space section-mb-space">
+    <div class="bg-effect" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"></div>
+    <div class="container">
+        <div class="row g-md-5 g-4">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/character/2.svg" class="img-fluid"
+                        alt="about">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div>
+                        <div class="title">
+                            <span class="number-pattern">02.</span>
+                            <h2>Democratizing Data Science: Breaking Barriers, Creating Opportunities</h2>
+                        </div>
+                        <p>"Unlock Content Magic: Tailor Your Message to Win Hearts! Discover Your Ideal Audience,
+                            Understand Their Desires, Tastes, and Challenges!"</p>
+                        <ul>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Access high-quality educational content for free, empowering learners
+                                regardless of socioeconomic background.</li>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Collaborate with schools and nonprofits to inspire the next generation of
+                                data scientists.</li>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Make a positive social impact by bridging the educational divide through
+                                outreach programs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section end -->
+
+
+<!-- about section start -->
+<section class="about-section section-b-space">
+    <div class="bg-effect" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"></div>
+    <div class="container">
+        <div class="row g-md-5 g-4">
+            <div class="col-lg-6 order-lg-0 order-1">
+                <div class="about-content">
+                    <div>
+                        <div class="title">
+                            <span class="number-pattern">03.</span>
+                            <h2 class="text-white">Innovation through Collaboration: Revolutionizing Data Science
+                                Education</h2>
+                        </div>
+                        <p>Experience the power of Megabot AI and revolutionise your social media presence. Say
+                            goodbye to writer's block and hello to compelling hashtags, captivating captions, and
+                            endless content possibilities.</p>
+                        <ul>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Foster a culture of inclusivity, collaboration, and continuous learning.
+                            </li>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Stay at the forefront of the field with cutting-edge technologies and
+                                up-to-date resources.</li>
+                            <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/tick.svg" class="img-fluid"
+                                    alt="tick">Forge strategic partnerships to expand offerings, including advanced
+                                courses and mentorship programs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/character/3.svg" class="img-fluid"
+                        alt="about">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section end -->
+
+
+<!-- feature section start -->
+<section class="feature-section section-b-space">
+    <div class="bg-effect">
+        <img src="../assets/images/feature.gif" class="img-fluid feature-left" alt="">
+        <img src="../assets/images/feature.gif" class="img-fluid feature-right" alt="">
+        <img src="../assets/images/feature-bg.png" class="img-fluid feature-bg" alt="">
+        <span class="round-effect"></span>
+    </div>
+    <div class="container">
+        <div class="title-basic">
+            <h2>Unleash Limitless Potential: Engage in Captivating Data Projects</h2>
+        </div>
+        <div class="swiper featureSlider">
+            <div id="featureSlider" class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row g-xxl-5 g-4">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/message.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/message-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Ask anything</h3>
+                                </div>
+                                <h4>Unlock the power of curiosity, Ask anything and let our AI unravel the answers
+                                    for you!</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=DATA_SCIENCE">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Code generator</h3>
+                                </div>
+                                <h4>Discover the power of technology, making your coding dreams a reality.
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/play.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/play-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>ASO expert</h3>
+                                </div>
+                                <h4>Boost your app's success and take over the app stores and win the attention of
+                                    millions.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/insta.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/insta-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Insta caption</h3>
+                                </div>
+                                <h4>One caption at a time, unveiling the endless potential of AI</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/mail.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/mail-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Email generator</h3>
+                                </div>
+                                <h4>Generating emails that captivates and expresses with brilliance.
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/hashtag.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/hashtag-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Hashtag writer</h3>
+                                </div>
+                                <h4>Boost your content journey by utilising the power of hashtags!
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/box.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/box-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>E-commerce</h3>
+                                </div>
+                                <h4>Promoting sales, enhancing customer experience, and redefining product
+                                    recommendations.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/marketing.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/marketing-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Ads & marketing</h3>
+                                </div>
+                                <h4>Tap into data-driven facts, target the right clientele, and maximize ad
+                                    performance.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row g-xxl-5 g-4">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/message.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/message-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Ask anything</h3>
+                                </div>
+                                <h4>Unlock the power of curiosity, Ask anything and let our AI unravel the answers
+                                    for you!</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Code generator</h3>
+                                </div>
+                                <h4>Discover the power of technology, making your coding dreams a reality.
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/play.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/play-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>ASO expert</h3>
+                                </div>
+                                <h4>Boost your app's success and take over the app stores and win the attention of
+                                    millions.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/insta.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/insta-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Insta caption</h3>
+                                </div>
+                                <h4>One caption at a time, unveiling the endless potential of AI</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/mail.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/mail-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Email generator</h3>
+                                </div>
+                                <h4>Generating emails that captivates and expresses with brilliance.
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/hashtag.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/hashtag-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Hashtag writer</h3>
+                                </div>
+                                <h4>Boost your content journey by utilising the power of hashtags!
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/box.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/box-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>E-commerce</h3>
+                                </div>
+                                <h4>Promoting sales, enhancing customer experience, and redefining product
+                                    recommendations.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/marketing.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/marketing-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Ads & marketing</h3>
+                                </div>
+                                <h4>Tap into data-driven facts, target the right clientele, and maximize ad
+                                    performance.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row g-xxl-5 g-4">
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-delay="100">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/message.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/message-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Ask anything</h3>
+                                </div>
+                                <h4>Unlock the power of curiosity, Ask anything and let our AI unravel the answers
+                                    for you!</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=DATA_SCIENCE">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-delay="100">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Code generator</h3>
+                                </div>
+                                <h4>Discover the power of technology, making your coding dreams a reality.
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-delay="100">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/play.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/play-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>ASO expert</h3>
+                                </div>
+                                <h4>Boost your app's success and take over the app stores and win the attention of
+                                    millions.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-delay="100">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/insta.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/insta-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Insta caption</h3>
+                                </div>
+                                <h4>One caption at a time, unveiling the endless potential of AI</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-delay="100">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/mail.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/mail-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Email generator</h3>
+                                </div>
+                                <h4>Generating emails that captivates and expresses with brilliance.
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-delay="100">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/hashtag.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/hashtag-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Hashtag writer</h3>
+                                </div>
+                                <h4>Boost your content journey by utilising the power of hashtags!
+                                </h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-delay="100">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/box.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/box-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>E-commerce</h3>
+                                </div>
+                                <h4>Promoting sales, enhancing customer experience, and redefining product
+                                    recommendations.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-delay="100">
+                            <div class="feature-box">
+                                <div class="feature-top">
+                                    <div class="feature-icon">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/marketing.svg"
+                                            class="img-fluid outline-icon" alt="">
+                                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/marketing-bold.svg"
+                                            class="img-fluid bold-icon" alt="">
+                                    </div>
+                                    <h3>Ads & marketing</h3>
+                                </div>
+                                <h4>Tap into data-driven facts, target the right clientele, and maximize ad
+                                    performance.</h4>
+                                <div data-cursor="pointer" class="link-overflow"><a href="{% url 'blogpost-list' %}?tag=">Read more <i
+                                            class="iconsax" data-icon="arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagination-effect">
+        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/pagination-robot.svg" class="img-fluid" alt="">
+    </div>
+    <div class="swiper-pagination feature-pagination"></div>
+</section>
+<!-- feature section end -->
+
+<!-- pricing section start -->
+<section class="pricing-section section-b-space">
+    <div class="container">
+        <div class="title-horizontal">
+            <h2>Unleash limitless potential & versatile projects for every need</h2>
+            <p>Ignite your curiosity and unleash your potential with our diverse range of captivating data projects.</p>
+        </div>
+        <div class="row pricing-row g-xl-5 g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-box">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/hanging.svg"
+                        class="img-fluid handing-cls" alt="effect">
+                    <div class="pricing-top">
+                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/pricing/pricing-top.svg"
+                            class="img-fluid pricing-bg" alt="">
+                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/pricing/weekly.svg"
+                            class="img-fluid" alt="">
+                        <h3>Weekly Plan</h3>
+                    </div>
+                    <div class="pricing-mid">
+                        <div class="clip-path-content">
+                            <div>
+                                <h2>$3.99</h2>
+                                <h4>/ only</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-content">
+                        <div class="clip-path-content">
+                            <ul>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Intelligent AI chatbot</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Unlimited answer of question</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Avoid buying coin forever</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>No ad in background</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Early access to new features</h4>
+                                </li>
+                            </ul>
+                            <a class="pricing-link" href="#" data-cursor="pointer">Choose plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-box">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/hanging-green.svg"
+                        class="img-fluid handing-cls" alt="effect">
+                    <div class="pricing-top">
+                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/pricing/pricing-center.svg"
+                            class="img-fluid pricing-bg" alt="">
+                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/pricing/monthly.svg"
+                            class="img-fluid" alt="">
+                        <h3>Monthly Plan</h3>
+                    </div>
+                    <div class="pricing-mid">
+                        <div class="clip-path-content">
+                            <div>
+                                <h2>$3.99</h2>
+                                <h4>/ only</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-content">
+                        <div class="clip-path-content">
+                            <ul>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Intelligent AI chatbot</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Unlimited answer of question</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Avoid buying coin forever</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>No ad in background</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Early access to new features</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>15+ new category</h4>
+                                </li>
+                            </ul>
+                            <a class="pricing-link" href="#" data-cursor="pointer">Choose plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-box">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/hanging.svg"
+                        class="img-fluid handing-cls" alt="effect">
+                    <div class="pricing-top">
+                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/pricing/pricing-top.svg"
+                            class="img-fluid pricing-bg" alt="">
+                        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/pricing/yearly.svg"
+                            class="img-fluid" alt="">
+                        <h3>Lifetime Plan</h3>
+                    </div>
+                    <div class="pricing-mid">
+                        <div class="clip-path-content">
+                            <div>
+                                <h2>$3.99</h2>
+                                <h4>/ only</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-content">
+                        <div class="clip-path-content">
+                            <ul>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Intelligent AI chatbot</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Unlimited answer of question</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Avoid buying coin forever</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>No ad in background</h4>
+                                </li>
+                                <li>
+                                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/arrow.svg"
+                                        class="img-fluid" alt="arrow">
+                                    <h4>Early access to new features</h4>
+                                </li>
+                            </ul>
+                            <a class="pricing-link" href="#" data-cursor="pointer">Choose plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- pricing section end -->
+
+<!-- testimonial section start -->
+<section class="testimonial-section section-b-space">
+    <div class="container">
+        <div class="title-basic">
+            <h2>The Team!</h2>
+        </div>
+        <div class="swiper testimonialSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-box">
+                        <div class="content-sec">
+                            <div class="quote-img">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote.svg"
+                                    class="img-fluid outline-img" alt="">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote-green.svg"
+                                    class="img-fluid fill-img" alt="">
+                            </div>
+                            <p> The quality of the generated text is impressive, and
+                                it saves me so much time and effort. Highly recommended!
+                            </p>
+                        </div>
+                        <div class="small-circle"><span></span></div>
+                        <div class="large-circle"><span></span></div>
+                        <div class="avtar-img">
+                            <img src="../assets/images/user/1.jpg" class="img-fluid" alt="user">
+                        </div>
+                        <h4>Marvin McKinney</h4>
+                        <h5>Content writer</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="testimonial-box">
+                        <div class="content-sec">
+                            <div class="quote-img">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote.svg"
+                                    class="img-fluid outline-img" alt="">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote-green.svg"
+                                    class="img-fluid fill-img" alt="">
+                            </div>
+                            <p>As a marketer, I'm always looking for ways to streamline my work. The AI
+                                Tool has been a fantastic addition to my toolkit. It helps me come up with creative
+                                ideas!
+                            </p>
+                        </div>
+                        <div class="small-circle"><span></span></div>
+                        <div class="large-circle"><span></span></div>
+                        <div class="avtar-img">
+                            <img src="../assets/images/user/2.jpg" class="img-fluid" alt="user">
+                        </div>
+                        <h4>Marvin McKinney</h4>
+                        <h5>Content writer</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="testimonial-box">
+                        <div class="content-sec">
+                            <div class="quote-img">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote.svg"
+                                    class="img-fluid outline-img" alt="">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote-green.svg"
+                                    class="img-fluid fill-img" alt="">
+                            </div>
+                            <p>I was skeptical about using AI for content generation, but after trying out the AI
+                                Generation Tool, I was pleasantly surprised.
+                            </p>
+                        </div>
+                        <div class="small-circle"><span></span></div>
+                        <div class="large-circle"><span></span></div>
+                        <div class="avtar-img">
+                            <img src="../assets/images/user/3.jpg" class="img-fluid" alt="user">
+                        </div>
+                        <h4>Marvin McKinney</h4>
+                        <h5>Content writer</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="testimonial-box">
+                        <div class="content-sec">
+                            <div class="quote-img">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote.svg"
+                                    class="img-fluid outline-img" alt="">
+                                <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote-green.svg"
+                                    class="img-fluid fill-img" alt="">
+                            </div>
+                            <p>The AI Generation Tool has revolutionized the way I write. Whether I need help with
+                                brainstorming ideas or fleshing out drafts.
+                            </p>
+                        </div>
+                        <div class="small-circle"><span></span></div>
+                        <div class="large-circle"><span></span></div>
+                        <div class="avtar-img">
+                            <img src="../assets/images/user/3.jpg" class="img-fluid" alt="user">
+                        </div>
+                        <h4>Marvin McKinney</h4>
+                        <h5>Content writer</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- testimonial section end -->
+
+<!-- faq section start -->
+<section class="faq-section">
+    <div class="container">
+        <div class="title-basic">
+            <h2 class="text-white">Have inquiries? In our FAQ, you'll find all the solutions you need.</h2>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button data-cursor="pointer" class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Is the content unique?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <p>Given that it is generated in real-time from the data and context given, MegaBot's
+                            content is indeed distinctive. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        How can I boost traffic with Megabot?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        Leverage AI-driven analytics to identify and target your audience with personalised content
+                        and recommendations.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        How long will it take to write an article with AI?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        with advanced AI models, it's possible to generate an article within minutes or even
+                        seconds.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        Is there a limit to the amount of stuff that I can create?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        No, there is no inherent limit to the amount of stuff you can create. The possibilities are
+                        virtually limitless.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        What languages do you support?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        No, there is no inherent limit to the amount of stuff you can create. The possibilities are
+                        virtually limitless.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSix">
+                        Is there a limit to the amount of stuff I can create?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        No, there is no inherent limit to the amount of stuff you can create. The possibilities are
+                        virtually limitless.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- faq section end -->
+
+{% include 'components/contact-us.html' %}
+{% include 'components/footer.html' %}
+
+
+<!-- Tap To Top Button Start -->
+<div class="tap-to-top-box hide">
+    <button class="tap-to-top-button"><i class="iconsax" data-icon="chevron-up"></i></button>
+</div>
+<!-- Tap To Top Button End -->
+
+
+<!--custom cursor start  -->
+<div id="cursor"></div>
+<div id="cursor-border"></div>
+<!--custom cursor start  -->
+{% endblock content %}

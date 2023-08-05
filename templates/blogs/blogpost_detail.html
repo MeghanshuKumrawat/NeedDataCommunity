@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'components/header.html' %}
+<!-- breadcrumb section start -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="breadcrumb-content">
+                    <div>
+                        <h2><img src="{% static 'assets/images/breadcrumb-title.png' %}" class="img-fluid"
+                                alt="title-effect">{{ blogpost.title }}
+                        </h2>
+                        <!-- <p><i class="ri-subtract-line"></i>Discover the most recent blogs about artificial
+                            intelligence here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-lg-inline-block d-none">
+                <div class="breadcrumb-img">
+                    <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/blog-details-vector.svg" class="img-fluid" alt="service">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- breadcrumb section end -->
+
+
+<!-- blog details start -->
+<section class="ratio_40">
+    <div class="container">
+        <div class="blog-details">
+            <div class="blog-img">
+                <img src="{{ blogpost.banner_image.url }}" class="img-fluid w-100 bg-img" alt="blog">
+            </div>
+            <div class="blog-title-box">
+                <a data-cursor="pointer" class="main-title" href="{% url 'blogpost-detail' blogpost.pk %}">{{ blogpost.title }}</a>
+                <ul>
+                    <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code.svg" class="img-fluid avtar" alt="author"> {{ blogpost.author }}
+                    </li>
+                    <li><i class="iconsax" data-icon="calendar-add"></i> blogpost.date_created|date:"d F Y"</li>
+                    <li><i class="iconsax" data-icon="clock"></i> {{ blogpost.time_to_read }} min</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-10 m-auto">
+                    <div class="blog-main-content">
+                        <p>{{ blogpost.content|safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blog details end -->
+
+<!-- comment section start -->
+<!-- <section class="comment-section pb-md-5 pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 m-auto">
+                <div class="comment-box overflow-hidden">
+                    <div class="leave-title">
+                        <h3>Comments</h3>
+                    </div>
+
+                    <div class="user-comment-box">
+                        <ul>
+                            <li>
+                                <div class="user-box border-color">
+                                    <div class="reply-button">
+                                        <span class="text-theme-color">Reply</span>
+                                    </div>
+                                    <div class="user-image">
+                                        <img src="../assets/images/user/1.jpg" class="img-fluid" alt="">
+                                        <div class="user-name">
+                                            <h6>30 Jan, 2022</h6>
+                                            <h5 class="text-title">Glenn Greer</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="user-contain">
+                                        <p>"This proposal is a win-win situation which will cause a stellar paradigm
+                                            shift, and produce a multi-fold increase in deliverables a better
+                                            understanding"</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="user-box border-color">
+                                    <div class="reply-button">
+                                        <span class="text-theme-color">Reply</span>
+                                    </div>
+                                    <div class="user-image">
+                                        <img src="../assets/images/user/2.jpg" class="img-fluid" alt="">
+                                        <div class="user-name">
+                                            <h6>30 Jan, 2022</h6>
+                                            <h5 class="text-title">Glenn Greer</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="user-contain">
+                                        <p>"Yeah, I think maybe you do. Right, gimme a Pepsi free. Of course, the
+                                            Enchantment Under The Sea Dance they're supposed to go to this, that's
+                                            where they kiss for the first time. You'll find out. Are you sure about
+                                            this storm?"</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="li-padding">
+                                <div class="user-box">
+                                    <div class="reply-button">
+                                        <span class="text-theme-color">Reply</span>
+                                    </div>
+                                    <div class="user-image">
+                                        <img src="../assets/images/user/3.jpg" class="img-fluid" alt="">
+                                        <div class="user-name">
+                                            <h6>30 Jan, 2022</h6>
+                                            <h5 class="text-title">Glenn Greer</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="user-contain">
+                                        <p>"Cheese slices goat cottage cheese roquefort cream cheese pecorino cheesy
+                                            feet when the cheese comes out everybody's happy"</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="leave-box mt-4">
+                    <div class="leave-comment">
+                        <div class="comment-notes">
+                            <h3 class="text-title mb-2">Leave Comment</h3>
+                            <p class="text-content mb-4">Your email address will not be published. Required
+                                fields
+                                are marked</p>
+                        </div>
+                        <form class="auth-form">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="blog-input">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Full Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="blog-input">
+                                        <input type="email" class="form-control" id="exampleFormControlInput2"
+                                            placeholder="Enter Email Address">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="blog-input">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                                            placeholder="Comments"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button class="btn btn-solid ms-xxl-auto mt-sm-5 mt-4">Post
+                                Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- comment section end -->
+
+{% include 'components/contact-us.html' %}
+{% include 'components/footer.html' %}
+
+{% endblock %}
