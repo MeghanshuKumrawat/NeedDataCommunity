@@ -58,6 +58,7 @@ class Course(models.Model):
     icon = models.ImageField(upload_to='courses/icons/', blank=True)
     banner_image = models.ImageField(upload_to='courses/banner_images/', blank=True)
     type = models.CharField(max_length=200, choices=Types.choices, default=Types.WORKSHOPS)
+    link = models.URLField(blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
 
 
