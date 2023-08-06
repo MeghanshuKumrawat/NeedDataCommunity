@@ -61,11 +61,17 @@ class Course(models.Model):
     link = models.URLField(blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.title
+
 
 class CourseKeyPoint(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     key_point = models.CharField(max_length=200)
     date_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.key_point
 
 class ContactUs(models.Model):
     name = models.CharField(max_length=200)
@@ -73,3 +79,6 @@ class ContactUs(models.Model):
     phone = models.CharField(max_length=200)
     message = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email
