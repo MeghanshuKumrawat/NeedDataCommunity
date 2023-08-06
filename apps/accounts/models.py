@@ -6,4 +6,6 @@ class Team(models.Model):
     designation = models.CharField(max_length=100)
     description = models.CharField(max_length=255)
     profile = models.ImageField(upload_to='teams')
-    
+
+    def __str__(self):
+        return self.name
