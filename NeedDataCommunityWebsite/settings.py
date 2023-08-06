@@ -76,8 +76,6 @@ WSGI_APPLICATION = 'NeedDataCommunityWebsite.wsgi.application'
 
 # Tinymce settings
 TINYMCE_DEFAULT_CONFIG = {
-    'height': 550,
-    'width': 400,
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 20,
     'selector': '#id_content',
