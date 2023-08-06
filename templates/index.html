@@ -109,9 +109,8 @@
                             </div>
                             <div class="service-content">
                                 <h3><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service-title.svg"
-                                        alt="effect" class="img-fluid">SEO
-                                    Sepcialist</h3>
-                                <p>Generate more engaging content to skyrocket your website’s visibility
+                                        alt="effect" class="img-fluid">Industry experts</h3>
+                                <p>Get more engaging content to skyrocket your learning journey
                                 </p>
                             </div>
                         </div>
@@ -126,9 +125,8 @@
                             </div>
                             <div class="service-content">
                                 <h3><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/service-title.svg"
-                                        alt="effect" class="img-fluid">Content
-                                    marker</h3>
-                                <p>Reinvent your content marketing and captivate your audience like never before.
+                                        alt="effect" class="img-fluid">Build Resume</h3>
+                                <p>Elevate your skills with our dynamic resume building Course.
                                 </p>
                             </div>
                         </div>
@@ -293,7 +291,7 @@
         <img src="../assets/images/feature-bg.png" class="img-fluid feature-bg" alt="">
         <span class="round-effect"></span>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="title-basic">
             <h2>Unleash Limitless Potential: Engage in Captivating Data Projects</h2>
         </div>
@@ -750,11 +748,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="pagination-effect">
+    </div> -->
+    <!-- <div class="pagination-effect">
         <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/pagination-robot.svg" class="img-fluid" alt="">
     </div>
-    <div class="swiper-pagination feature-pagination"></div>
+    <div class="swiper-pagination feature-pagination"></div> -->
 </section>
 <!-- feature section end -->
 
@@ -765,7 +763,7 @@
             <h2>Unleash limitless potential & versatile projects for every need</h2>
             <p>Ignite your curiosity and unleash your potential with our diverse range of captivating data projects.</p>
         </div>
-        <div class="row pricing-row g-xl-5 g-4 justify-content-center">
+        <!-- <div class="row pricing-row g-xl-5 g-4 justify-content-center">
             <div class="col-lg-4 col-md-6">
                 <div class="pricing-box">
                     <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/hanging.svg"
@@ -930,7 +928,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 <!-- pricing section end -->
@@ -943,6 +941,7 @@
         </div>
         <div class="swiper testimonialSlider">
             <div class="swiper-wrapper">
+                {% for team in teams %}
                 <div class="swiper-slide">
                     <div class="testimonial-box">
                         <div class="content-sec">
@@ -952,20 +951,20 @@
                                 <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/quote-green.svg"
                                     class="img-fluid fill-img" alt="">
                             </div>
-                            <p> The quality of the generated text is impressive, and
-                                it saves me so much time and effort. Highly recommended!
+                            <p> {{ team.description }}
                             </p>
                         </div>
                         <div class="small-circle"><span></span></div>
                         <div class="large-circle"><span></span></div>
                         <div class="avtar-img">
-                            <img src="../assets/images/user/1.jpg" class="img-fluid" alt="user">
+                            <img src="{{ team.profile.url }}" class="img-fluid" alt="user">
                         </div>
-                        <h4>Marvin McKinney</h4>
-                        <h5>Content writer</h5>
+                        <h4>{{ team.name }}</h4>
+                        <h5>{{ team.designation }}</h5>
                     </div>
                 </div>
-                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                {% endfor %}
+                <!-- <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="testimonial-box">
                         <div class="content-sec">
                             <div class="quote-img">
@@ -1031,7 +1030,7 @@
                         <h4>Marvin McKinney</h4>
                         <h5>Content writer</h5>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -1040,7 +1039,7 @@
 <!-- testimonial section end -->
 
 <!-- faq section start -->
-<section class="faq-section">
+<!-- <section class="faq-section">
     <div class="container">
         <div class="title-basic">
             <h2 class="text-white">Have inquiries? In our FAQ, you'll find all the solutions you need.</h2>
@@ -1145,7 +1144,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- faq section end -->
 
 {% include 'components/contact-us.html' %}

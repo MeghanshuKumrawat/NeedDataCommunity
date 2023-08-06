@@ -45,7 +45,7 @@
                     </div>
                     <div class="blog-content">
                         <a data-cursor="pointer" class="main-title" href="{% url 'blogpost-detail' blog.pk %}">{{ blog.title }}</a>
-                        <p>{{ blog.content|truncatewords:15 }}</p>
+                        <p>{{ blog.content|truncatewords:15|safe }}</p>
                         <ul>
                             <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code.svg" class="img-fluid avtar" alt="author">{{ blog.author }}</li>
                             <li><i class="iconsax" data-icon="calendar-add"></i> {{ blog.date_created|date:"d F Y" }}</li>

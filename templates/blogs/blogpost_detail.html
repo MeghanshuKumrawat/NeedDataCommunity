@@ -41,7 +41,7 @@
                 <ul>
                     <li><img src="https://themes.pixelstrap.net/mega_bot/assets/svg/feature/code.svg" class="img-fluid avtar" alt="author"> {{ blogpost.author }}
                     </li>
-                    <li><i class="iconsax" data-icon="calendar-add"></i> blogpost.date_created|date:"d F Y"</li>
+                    <li><i class="iconsax" data-icon="calendar-add"></i>{{ blogpost.date_created|date:"d F Y" }}</li>
                     <li><i class="iconsax" data-icon="clock"></i> {{ blogpost.time_to_read }} min</li>
                 </ul>
             </div>

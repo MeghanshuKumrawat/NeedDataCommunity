@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from apps.blogs.models import BlogPost, Course, CourseKeyPoint, ContactUs
+from apps.accounts.models import Team
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView
@@ -7,8 +8,10 @@ from django.views.generic import TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.core.paginator import Paginator
 
-class IndexView(TemplateView):
+class IndexView(ListView):
+    model = Team
     template_name = 'index.html'
+    context_object_name = 'teams'
 
 
 class BlogPostListView(ListView):
@@ -16,7 +19,7 @@ class BlogPostListView(ListView):
     template_name = 'blogs/blogpost_list.html'
     context_object_name = 'blogposts'
     ordering = ['-date_created']
-    paginate_by = 1
+    paginate_by = 5
 
     def get_queryset(self):
         queryset = super().get_queryset()
