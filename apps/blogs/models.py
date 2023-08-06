@@ -49,7 +49,7 @@ class Course(models.Model):
         
     title = models.CharField(max_length=200)
     price = models.FloatField()
-    description = models.TextField()
+    description = HTMLField()
     start_date = models.DateField()
     end_date = models.DateField()
     start_time = models.TimeField()
